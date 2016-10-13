@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#dddddd"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.nenton.gamesofthrones.ui.activities.ScreenCharacter"
+    tools:showIn="@layout/activity_screen_character">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <Button
+            android:id="@+id/buttonmother"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/buttonfather"
+            android:layout_marginLeft="56dp"
+            android:layout_toRightOf="@+id/imageScreen_4"
+            android:background="@color/colorPrimary"
+            android:textColor="#ffffff"
+            android:visibility="gone"/>
+
+        <Button
+            android:id="@+id/buttonfather"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/alliase_txt"
+            android:layout_marginLeft="56dp"
+            android:layout_toRightOf="@+id/imageScreen_4"
+            android:background="@color/colorPrimary"
+            android:textColor="#ffffff"
+            android:visibility="gone"/>
+
+        <ImageView
+            android:id="@+id/imageScreen_1"
+            style="@style/image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignWithParentIfMissing="false"
+            android:adjustViewBounds="false"
+            app:srcCompat="@drawable/ic_whatshot_black_24dp"/>
+
+        <TextView
+            android:id="@+id/words"
+            style="@style/text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/imageScreen_1"
+            android:gravity="center"
+            android:text="Words"/>
+
+        <TextView
+            android:id="@+id/words_txt"
+            style="@style/text.text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/imageScreen_1"
+            android:gravity="center_vertical"
+            android:text="TextView"/>
+
+        <ImageView
+            android:id="@+id/imageScreen_2"
+            style="@style/image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/words_txt"
+            app:srcCompat="@drawable/ic_whatshot_black_24dp"/>
+
+        <TextView
+            android:id="@+id/born"
+            style="@style/text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/words_txt"
+            android:layout_toRightOf="@+id/imageScreen_2"
+            android:gravity="center"
+            android:text="Born"/>
+
+        <TextView
+            android:id="@+id/born_txt"
+            style="@style/text.text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/words_txt"
+            android:layout_toRightOf="@+id/imageScreen_2"
+            android:gravity="center_vertical"
+            android:text="TextView"/>
+
+        <ImageView
+            android:id="@+id/imageScreen_3"
+            style="@style/image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/born_txt"
+            app:srcCompat="@drawable/ic_whatshot_black_24dp"/>
+
+        <TextView
+            android:id="@+id/titles"
+            style="@style/text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/born_txt"
+            android:layout_centerHorizontal="false"
+            android:layout_centerInParent="false"
+            android:layout_toRightOf="@+id/imageScreen_3"
+            android:gravity="center"
+            android:text="Titles"/>
+
+        <TextView
+            android:id="@+id/titles_txt"
+            style="@style/text.text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/born_txt"
+            android:layout_toRightOf="@+id/imageScreen_3"
+            android:gravity="center_vertical"
+            android:text="TextView"/>
+
+        <ImageView
+            android:id="@+id/imageScreen_4"
+            style="@style/image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/titles_txt"
+            app:srcCompat="@drawable/ic_whatshot_black_24dp"/>
+
+        <TextView
+            android:id="@+id/alliase"
+            style="@style/text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="false"
+            android:layout_below="@+id/titles_txt"
+            android:layout_centerInParent="false"
+            android:layout_toRightOf="@+id/imageScreen_4"
+            android:gravity="center"
+            android:text="Alliase"/>
+
+        <TextView
+            android:id="@+id/alliase_txt"
+            style="@style/text.text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/titles_txt"
+            android:layout_toRightOf="@+id/imageScreen_4"
+            android:gravity="center_vertical"
+            android:text="TextView"/>
+
+        <TextView
+            android:id="@+id/father"
+            style="@style/text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/alliase_txt"
+            android:layout_toRightOf="@+id/imageScreen_4"
+            android:text="Father"
+            android:visibility="gone"
+            />
+
+        <TextView
+            android:id="@+id/mother"
+            style="@style/text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/buttonfather"
+            android:layout_toRightOf="@+id/imageScreen_4"
+            android:text="Mother"
+            android:visibility="gone"/>
+
+    </RelativeLayout>
+</android.support.v4.widget.NestedScrollView>
